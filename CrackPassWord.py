@@ -11,7 +11,6 @@ allowed_chars = string.ascii_lowercase + " "
 # Base de données des mots de passe avec un exemple utilisateur initial
 password_database = {"Jules": "bien joue tu as trouve le mdp"}
 
-
 # Fonction pour vérifier si le mot de passe deviné correspond au mot de passe réel
 def check_password(user, guess):
     actual = password_database[user]
@@ -23,11 +22,9 @@ def check_password(user, guess):
             return False
     return True
 
-
 # Fonction pour générer une chaîne de caractères aléatoire d'une certaine longueur
 def random_str(size):
     return ''.join(random.choices(allowed_chars, k=size))
-
 
 # Fonction pour estimer la longueur du mot de passe
 def crack_length(user, max_len=32, verbose=False) -> int:
@@ -47,7 +44,6 @@ def crack_length(user, max_len=32, verbose=False) -> int:
 
     most_likely = int(numpy.argmax(times))
     return most_likely
-
 
 # Fonction pour cracker le mot de passe avec une longueur estimée
 def crack_password(user, length, verbose=False):
@@ -87,7 +83,6 @@ def main():
     input("hit enter to continue...")
     password = crack_password(user, length, verbose=True)
     print(f"password cracked:'{password}'")
-
 
 if __name__ == '__main__':
     main()
