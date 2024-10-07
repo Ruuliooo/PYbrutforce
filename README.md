@@ -9,3 +9,6 @@ I hadn't found any codes that suited my needs until now, so I might as well do i
 
 ### ❓ About me 
 I invite you to follow my profile and to contact me via my Discord if you need more information!
+
+### Updates
+Last updates: ```07/10/2024```
