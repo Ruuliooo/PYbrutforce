@@ -9,7 +9,7 @@ import numpy
 allowed_chars = string.ascii_lowercase + " "
 
 # Base de données des mots de passe avec un exemple utilisateur initial
-password_database = {"Jules": "bien joue tu as trouve le mdp"}
+password_database = {"Jules": "bien joué tu as trouve le mdp"}
 
 # Fonction pour vérifier si le mot de passe deviné correspond au mot de passe réel
 def check_password(user, guess):
